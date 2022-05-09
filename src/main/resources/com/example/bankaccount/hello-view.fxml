@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="908.0" style="-fx-background-color: #00001e;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankaccount.HelloController1">
+   <children>
+      <ImageView fx:id="imgdol" fitHeight="311.0" fitWidth="423.0" layoutX="29.0" layoutY="99.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../4.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="552.0" layoutY="74.0" opacity="0.64" prefHeight="411.0" prefWidth="323.0" style="-fx-background-color: #00005e;">
+         <children>
+            <Label fx:id="lblSignin" layoutX="122.0" layoutY="38.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="btnmanager" layoutX="35.0" layoutY="108.0" mnemonicParsing="false" text="Manager" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="btnclient" layoutX="36.0" layoutY="139.0" mnemonicParsing="false" text="Client" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </RadioButton>
+            <PasswordField fx:id="txtpassword" layoutX="89.0" layoutY="231.0" promptText="Password">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="txtusername" layoutX="87.0" layoutY="181.0" promptText="Username">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblnothaveaccount" layoutX="7.0" layoutY="333.0" prefHeight="26.0" prefWidth="166.0" text="Do not have an account?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imguser" fitHeight="26.0" fitWidth="27.0" layoutX="58.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/bankaccount/img_294950.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgpass" fitHeight="26.0" fitWidth="27.0" layoutX="58.0" layoutY="230.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/example/bankaccount/OIP.r-C4eWnt5DeWsvYlGOs1FQHaHa.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btndone" layoutX="136.0" layoutY="283.0" mnemonicParsing="false" onAction="#pressBtnDone" text="Done">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsignup" layoutX="223.0" layoutY="333.0" mnemonicParsing="false" onAction="#pressBtnSignUp" text="Sign Up">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblWelcom" layoutX="297.0" layoutY="24.0" prefHeight="43.0" prefWidth="315.0" text="Welcome to Taha bank" textFill="#edf4f7">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
